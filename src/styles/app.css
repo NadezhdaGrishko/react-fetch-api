@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .app {
+    @apply text-gray-700 bg-gray-200 dark:bg-gray-800 dark:text-gray-200
+  }
+
+  h1, h2, h3 {
+    @apply font-bold
+  }
+
+  h4, h5, h6 {
+    @apply font-semibold
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-[14px]
+  }
+
+  a {
+    @apply text-blue-500 dark:text-blue-400 underline hover:text-sky-700 dark:hover:text-sky-500;
+  }
+
+  a, button {
+    @apply transition-colors duration-200 cursor-pointer
+  }
+}
+
+@layer utilities {
+  .big-shadow-1 {
+    box-shadow:
+      0px 0.7px 1.8px rgba(0, 0, 0, 0.014),
+      0px 2px 3.7px rgba(0, 0, 0, 0.02),
+      0px 4.8px 7.3px rgba(0, 0, 0, 0.026),
+      0px 16px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  .big-shadow-2 {
+    box-shadow:
+      0px 1.1px 3.5px rgba(0, 0, 0, 0.024),
+      0px 3.1px 7.5px rgba(0, 0, 0, 0.035),
+      0px 7.5px 14.6px rgba(0, 0, 0, 0.046),
+      0px 25px 40px rgba(0, 0, 0, 0.07);
+  }
+
+  .big-shadow-3 {
+    box-shadow:
+      0px 1.3px 7px rgba(0, 0, 0, 0.031),
+      0px 3.5px 15px rgba(0, 0, 0, 0.045),
+      0px 8.4px 29.3px rgba(0, 0, 0, 0.059),
+      0px 28px 80px rgba(0, 0, 0, 0.09);
+  }
+}
+
+@layer components {
+  
+}
